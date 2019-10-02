@@ -36,3 +36,27 @@ node3 = LinkedListNode.new(12, node2)
 node1.next_node = node3
 
 print_values(node3)
+
+def infinite_loop(next_node)
+
+  tortoise = next_node
+  hare = next_node
+  case
+   forever:
+
+    when hare == end 
+      return 'No Loop Found'
+
+    hare := hare.next
+
+    when hare == end
+      return 'No Loop Found'
+
+    hare = hare.next
+    tortoise = tortoise.next
+
+    when hare == tortoise
+      return 'Loop Found'
+end    
+
+print infinate_loop(node3)
